@@ -36,4 +36,4 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           artifacts: ${{ steps.sign.outputs.signedReleaseFile }}
-        if: startsWith(github.ref, 'refs/tags/v')
+        if: ${{ startsWith(github.ref, 'refs/tags/v') }}

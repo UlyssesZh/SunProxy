@@ -1,6 +1,6 @@
-# SunProxy
+<img src="https://github.com/UlyssesZh/SunProxy/blob/master/app/src/main/ic_launcher-playstore.png?raw=true" width="100" alt="icon">
 
-![icon](https://github.com/UlyssesZh/SunProxy/blob/master/app/src/main/ic_launcher-playstore.png?raw=true)
+# SunProxy
 
 Use VPN for proxy (redirect TCP packets, including HTTP proxy), custom DNS, and custom hosts file.
 
@@ -22,6 +22,10 @@ the hostname is known before the socket is opened.
 Redirect rules based on the presence of TLS is also not reliable
 because it is actually based on whether there is SNI in the TLS handshake.
 TLS without SNI will be falsely determined as non-TLS.
+
+## Screenshots
+
+<img src="https://raw.githubusercontent.com/UlyssesZh/SunProxy/master/screenshots/main.png?raw=true" width="300" alt="main"><img src="https://raw.githubusercontent.com/UlyssesZh/SunProxy/master/screenshots/settings.png?raw=true" width="300" alt="settings">
 
 ## Build
 
@@ -45,3 +49,4 @@ which is licensed under BSD-2-Clause.
 In this rewrite, I used the codes from the latest commit (bdf74ec) of NetGuard,
 and I restored NetGuard's original license notice in the source codes
 and marked every change I made to the codes.
+The app icon is based on a material icon licensed under Apache-2.0.
