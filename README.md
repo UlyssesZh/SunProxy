@@ -1,5 +1,7 @@
 # SunProxy
 
+![icon](https://github.com/UlyssesZh/SunProxy/blob/master/app/src/main/ic_launcher-playstore.png?raw=true)
+
 Use VPN for proxy (redirect TCP packets, including HTTP proxy), custom DNS, and custom hosts file.
 
 ## Redirect rule syntax

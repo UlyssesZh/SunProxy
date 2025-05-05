@@ -15,10 +15,12 @@ jobs:
         with:
           java-version: '21'
           distribution: temurin
-      - name: Set up Gradle
-        uses: gradle/actions/setup-gradle@v4
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          cmdline-tools-version: 12266719 # 16.0
       - name: Build
-        run: ./gradlew build
+        run: ./gradlew --no-daemon build
       - name: Sign
         id: sign
         uses: r0adkll/sign-android-release@v1
