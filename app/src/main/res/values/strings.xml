@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- General -->
+	<string name="app_name">SunProxy</string>
+	<string name="license" translatable="false">GPL-3.0-or-later</string>
+	<string name="home_url" translatable="false">https://github.com/UlyssesZh/SunProxy</string>
+
+	<string name="ok">OK</string>
+	<string name="cancel">Cancel</string>
+	<string name="invalid_input">Invalid input</string>
+
+	<!-- Main Activity -->
+	<string name="about">%{app_name} %{version_name}\nLicense: %{license}\n<a href="%{home_url}">%{home_url}</a></string>
+	<string name="open_repo">View source</string>
+	<string name="start">Start</string>
+	<string name="stop">Stop</string>
+	<string name="msg_start_failed">Start failed</string>
+	<string name="redirect_rule_hint">Redirect rules</string>
+	<string name="title_show_about">About</string>
+	<string name="title_activity_settings">Settings</string>
+
+	<!-- Redirect rule syntax errors -->
+	<string name="redirect_rule_syntax_error">Line %d: %s</string>
+	<string name="redirect_rule_unexpected_end">Unexpected end of expression</string>
+	<string name="redirect_rule_invalid_protocol">Invalid protocol: %s</string>
+	<string name="redirect_rule_invalid_operator">Invalid operator: %s</string>
+	<string name="redirect_rule_invalid_hostname_wildcard">Invalid hostname wildcard: %s</string>
+	<string name="redirect_rule_invalid_ip_range">Invalid IP range: %s</string>
+	<string name="redirect_rule_invalid_ip_address">Invalid IP address: %s</string>
+	<string name="redirect_rule_invalid_field">Invalid field: %s</string>
+
+	<!-- Basic settings -->
+	<string name="basic_settings">Basic</string>
+	<string name="enable_ipv6">Enable IPv6</string>
+	<string name="invalid_enable_ipv6">You cannot disable IPv6 because all IP addresses of the VPN are IPv6 addresses.</string>
+	<string name="vpn_addresses">IP addresses of the VPN</string>
+	<string name="vpn_addresses_message">One IP address or IP address range in each line. Use \"#\" for comments.
+		IPv6 addresses are ignored if IPv6 is disabled.</string>
+	<string name="invalid_vpn_addresses">Make sure that there is at least one IP address
+		and that they are all valid.</string>
+
+	<!-- App list -->
+	<string name="applications_settings">Applications</string>
+	<string name="app_list_type">Application whitelist/blacklist</string>
+	<string-array name="app_list_type">
+		<item>Blacklist: selected apps are not managed</item>
+		<item>Whitelist: only selected apps are managed</item>
+	</string-array>
+	<string-array name="app_list_type_values">
+		<item>BLACKLIST</item>
+		<item>WHITELIST</item>
+	</string-array>
+	<string name="whitelist">Application whitelist</string>
+	<string name="blacklist">Application blacklist</string>
+	<string name="clear_app_list">Clear all selections</string>
+	<string name="clear_app_list_message">Clear all selections in whitelist/blacklist</string>
+
+	<string name="search">Search</string>
+	<string name="show_system_apps">Show system apps</string>
+	<string name="filter_app_name">App name</string>
+	<string name="filter_package_name">Package name</string>
+	<string name="filter_by">Filter by</string>
+	<string name="descending">Descending</string>
+	<string name="ascending">Ascending</string>
+	<string name="order">Order</string>
+	<string name="sort_app_name">App name</string>
+	<string name="sort_package_name">Package name</string>
+	<string name="sort_by">Sort by</string>
+
+	<!-- DNS -->
+	<string name="vpn_dns">DNS</string>
+	<string name="use_default_dns">Use default DNS</string>
+	<string name="dns_list">DNS list</string>
+	<string name="dns_list_message">One IP address in each line. Use \"#\" for comments.
+		Cannot use local addresses and loopback addresses.</string>
+	<string name="hosts">Hosts</string>
+	<string name="hosts_message">One IP address and one domain in each line.
+		Use \"#\" for comments.
+		Wildcards are supported: \"*\" matches zero or more characters other than \".\";
+		\"**\" matches zero or more arbitrary characters.</string>
+	<string name="invalid_dns_list">Check the format of IP addresses.
+		Make sure there is no local address or loopback address.</string>
+	<string name="invalid_hosts_list">Check the format of IP addresses and domains.</string>
+	<string name="search_domains">Search domains</string>
+	<string name="search_domains_message">One domain in each line. Use \"#\" for comments.</string>
+	<string name="invalid_search_domains">Ensure that the domains are valid.</string>
+
+</resources>

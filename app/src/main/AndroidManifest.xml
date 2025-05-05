@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+		tools:ignore="QueryAllPackagesPermission" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<application
+		android:allowBackup="true"
+		android:dataExtractionRules="@xml/data_extraction_rules"
+		android:fullBackupContent="@xml/backup_rules"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:roundIcon="@mipmap/ic_launcher_round"
+		android:supportsRtl="true"
+		android:theme="@style/Theme.Material3.DynamicColors.DayNight"
+		tools:targetApi="31">
+		<activity
+			android:name="io.github.ulysseszh.sunproxy.MainActivity"
+			android:theme="@style/Theme.Material3.DynamicColors.DayNight.NoActionBar"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name="io.github.ulysseszh.sunproxy.SettingsActivity"
+			android:label="@string/title_activity_settings"
+			android:parentActivityName="io.github.ulysseszh.sunproxy.MainActivity">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="io.github.ulysseszh.sunproxy.MainActivity" />
+		</activity>
+
+		<service
+			android:name="io.github.ulysseszh.sunproxy.MyVpnService"
+			android:permission="android.permission.BIND_VPN_SERVICE"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="android.net.VpnService" />
+			</intent-filter>
+		</service>
+	</application>
+
+</manifest>

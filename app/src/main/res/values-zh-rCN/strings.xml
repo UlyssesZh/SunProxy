@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">SunProxy</string>
+	<string name="about">%{app_name} %{version_name}\n开源许可: %{license}\n<a href="%{home_url}">%{home_url}</a></string>
+	<string name="open_repo">查看代码</string>
+	<string name="start">开始</string>
+	<string name="stop">停止</string>
+	<string name="msg_start_failed">开始失败</string>
+	<string name="redirect_rule_hint">重定向规则</string>
+	<string name="title_show_about">关于</string>
+	<string name="title_activity_settings">设置</string>
+	<string name="search">搜索</string>
+	<string name="whitelist">应用白名单</string>
+	<string name="blacklist">应用黑名单</string>
+	<string name="clear_app_list_message">清除所有的白/黑名单</string>
+	<string name="app_list_type">应用白/黑名单</string>
+	<string name="ok">确定</string>
+	<string name="cancel">取消</string>
+	<string name="filter_app_name">应用名</string>
+	<string name="filter_package_name">包名</string>
+	<string name="filter_by">筛选条件</string>
+	<string name="descending">降序</string>
+	<string name="ascending">升序</string>
+	<string name="order">升/降序</string>
+	<string name="sort_app_name">应用名</string>
+	<string name="sort_package_name">包名</string>
+	<string name="sort_by">排序方式</string>
+	<string name="show_system_apps">显示系统应用</string>
+	<string name="applications_settings">应用</string>
+	<string name="clear_app_list">清除所有选择</string>
+	<string name="vpn_dns">DNS</string>
+	<string name="use_default_dns">使用默认 DNS</string>
+	<string name="dns_list">DNS 列表</string>
+	<string name="dns_list_message">每行一个 IP 地址. 用 \"#\" 表示注释.
+		不能使用本地地址和回环地址.</string>
+	<string name="hosts">Hosts</string>
+	<string name="hosts_message">每行一个 IP 地址和一个域名.
+		用 \"#\" 表示注释. 域名中可使用通配符: \"*\" 匹配除 \".\" 以外的零个或多个字符; \"**\" 匹配零个或多个任意字符.</string>
+	<string name="invalid_input">无效输入</string>
+	<string name="invalid_dns_list">请检查 IP 地址的格式并确保没有本地地址和回环地址.</string>
+	<string name="invalid_hosts_list">请检查 IP 地址和域名的格式.</string>
+	<string name="search_domains">搜索域名</string>
+	<string name="basic_settings">基础设置</string>
+	<string name="enable_ipv6">启用 IPv6</string>
+	<string name="search_domains_message">每行一个域名. 用 \"#\" 表示注释.</string>
+	<string name="vpn_addresses">VPN 的 IP 地址</string>
+	<string name="vpn_addresses_message">每行一个 IP 地址.</string>
+	<string name="invalid_vpn_addresses">确保有至少一个 IP 地址, 且所有的 IP 地址都有效.</string>
+	<string name="invalid_search_domains">确保所有的域名都有效.</string>
+	<string name="invalid_enable_ipv6">无法禁用 IPv6, 因为 VPN 的所有 IP 地址都是 IPv6 地址.</string>
+	<string name="redirect_rule_syntax_error">第 %d 行: %s</string>
+	<string name="redirect_rule_unexpected_end">表达式意外结束</string>
+	<string name="redirect_rule_invalid_protocol">无效协议: %s</string>
+	<string name="redirect_rule_invalid_operator">无效运算符: %s</string>
+	<string name="redirect_rule_invalid_hostname_wildcard">无效域名通配模板: %s</string>
+	<string name="redirect_rule_invalid_ip_range">无效 IP 地址范围: %s</string>
+	<string name="redirect_rule_invalid_ip_address">无效 IP 地址: %s</string>
+	<string name="redirect_rule_invalid_field">无效参数: %s</string>
+	<string-array name="app_list_type">
+		<item>黑名单: 不管理选择的应用</item>
+		<item>白名单: 仅管理选择的应用</item>
+	</string-array>
+</resources>
