@@ -33,8 +33,26 @@ jobs:
           keyPassword: ${{ secrets.KEY_PASSWORD }}
         env:
           BUILD_TOOLS_VERSION: 36.0.0
+      - name: Rename
+        run: mv ${{ steps.sign.outputs.signedReleaseFile }} app-release.apk
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: apk
+          path: app-release.apk
+
+  release:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    needs: build
+    if: ${{ startsWith(github.ref, 'refs/tags/v') }}
+    steps:
+      - name: Download
+        uses: actions/download-artifact@v4
+        with:
+          name: apk
       - name: Release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: ${{ steps.sign.outputs.signedReleaseFile }}
-        if: ${{ startsWith(github.ref, 'refs/tags/v') }}
+          artifacts: app-release.apk
