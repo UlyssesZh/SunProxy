@@ -25,7 +25,7 @@ TLS without SNI will be falsely determined as non-TLS.
 
 ## Screenshots
 
-<img src="https://raw.githubusercontent.com/UlyssesZh/SunProxy/master/screenshots/main.png?raw=true" width="300" alt="main"><img src="https://raw.githubusercontent.com/UlyssesZh/SunProxy/master/screenshots/settings.png?raw=true" width="300" alt="settings">
+<img src="https://raw.githubusercontent.com/UlyssesZh/SunProxy/master/metadata/en-US/images/phoneScreenshots/main.png?raw=true" width="300" alt="main"><img src="https://raw.githubusercontent.com/UlyssesZh/SunProxy/master/metadata/en-US/images/phoneScreenshots/settings.png?raw=true" width="300" alt="settings">
 
 ## Build
 
