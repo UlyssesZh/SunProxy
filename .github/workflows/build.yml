@@ -11,30 +11,35 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
           java-version: '21'
           distribution: temurin
+
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
         with:
           cmdline-tools-version: 12266719 # 16.0
+
       - name: Build
         run: ./gradlew --no-daemon build
+
       - name: Sign
-        id: sign
-        uses: r0adkll/sign-android-release@v1
-        with:
-          releaseDirectory: app/build/outputs/apk/release
-          signingKeyBase64: ${{ secrets.SIGNING_KEY_BASE64 }}
-          alias: ${{ secrets.ALIAS }}
-          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
-          keyPassword: ${{ secrets.KEY_PASSWORD }}
-        env:
-          BUILD_TOOLS_VERSION: 36.0.0
-      - name: Rename
-        run: mv ${{ steps.sign.outputs.signedReleaseFile }} app-release.apk
+        run: |
+          build_tools="$(find "$ANDROID_HOME/build-tools" -maxdepth 1 -mindepth 1 -printf '%p\n' | sort -V | tail -n1)"
+          echo "${{ secrets.SIGNING_KEY_BASE64 }}" | base64 -d > signingKey.jks
+          "$build_tools/apksigner" sign \
+            --alignment-preserved \
+            --ks signingKey.jks \
+            --ks-key-alias "${{ secrets.ALIAS }}" \
+            --ks-pass "pass:${{ secrets.KEY_STORE_PASSWORD }}" \
+            --key-pass "pass:${{ secrets.KEY_PASSWORD }}" \
+            --out app-release.apk \
+            app/build/outputs/apk/release/app-release-unsigned.apk
+          rm signingKey.jks
+
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
