@@ -5,21 +5,16 @@ plugins {
 
 android {
 	namespace = "io.github.ulysseszh.sunproxy"
-	compileSdk = 35
+	compileSdk = 36
 
 	defaultConfig {
 		applicationId = "io.github.ulysseszh.sunproxy"
 		minSdk = 21
-		targetSdk = 35
-		versionCode = 100
-		versionName = "0.1.0"
+		targetSdk = 36
+		versionCode = 101
+		versionName = "0.1.1"
 
 		testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-		externalNativeBuild {
-			cmake {
-				cppFlags += "-std=c++17"
-			}
-		}
 	}
 
 	buildTypes {
