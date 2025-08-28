@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<!-- Общее -->
 	<string name="app_name">SunProxy</string>
-	<string name="license" translatable="false">GPL-3.0-or-later</string>
-	<string name="home_url" translatable="false">https://github.com/UlyssesZh/SunProxy </string>
-
 	<string name="ok">ОК</string>
 	<string name="cancel">Отмена</string>
 	<string name="invalid_input">Неверный ввод</string>
-
-	<!-- Главная активность -->
-	<string name="about">%1$s %2$s\nЛицензия: %3$s\n<a href=\"%4$s\">%4$s</a></string>
+	<string name="about">%{app_name} %{version_name}\nЛицензия: %{license}\n<a href="%{home_url}">%{home_url}</a></string>
 	<string name="open_repo">См. исходный код</string>
 	<string name="start">Пуск</string>
 	<string name="stop">Стоп</string>
@@ -18,8 +12,6 @@
 	<string name="redirect_rule_hint">Правила перенаправления</string>
 	<string name="title_show_about">О программе</string>
 	<string name="title_activity_settings">Настройки</string>
-
-	<!-- Ошибки синтаксиса правил перенаправления -->
 	<string name="redirect_rule_syntax_error">Строка %1$d: %2$s</string>
 	<string name="redirect_rule_unexpected_end">Неожиданный конец выражения</string>
 	<string name="redirect_rule_invalid_protocol">Неверный протокол: %s</string>
@@ -28,16 +20,12 @@
 	<string name="redirect_rule_invalid_ip_range">Неверный диапазон IP-адресов: %s</string>
 	<string name="redirect_rule_invalid_ip_address">Неверный IP-адрес: %s</string>
 	<string name="redirect_rule_invalid_field">Неверное поле: %s</string>
-
-	<!-- Основные настройки -->
 	<string name="basic_settings">Основные</string>
 	<string name="enable_ipv6">Включить IPv6</string>
 	<string name="invalid_enable_ipv6">Нельзя отключить IPv6, так как все IP-адреса в VPN — это адреса IPv6.</string>
 	<string name="vpn_addresses">IP-адреса VPN</string>
 	<string name="vpn_addresses_message">По одному IP-адресу или диапазону в каждой строке. Используйте \"#\" для комментариев.\nАдреса IPv6 игнорируются, если IPv6 отключён.</string>
 	<string name="invalid_vpn_addresses">Убедитесь, что указан хотя бы один IP-адрес и все они корректны.</string>
-
-	<!-- Список приложений -->
 	<string name="applications_settings">Приложения</string>
 	<string name="app_list_type">Чёрный/белый список приложений</string>
 	<string-array name="app_list_type">
@@ -52,7 +40,6 @@
 	<string name="blacklist">Чёрный список приложений</string>
 	<string name="clear_app_list">Очистить все выборы</string>
 	<string name="clear_app_list_message">Очистить все выбранные приложения в белом/чёрном списке</string>
-
 	<string name="search">Поиск</string>
 	<string name="show_system_apps">Показывать системные приложения</string>
 	<string name="filter_app_name">Имя приложения</string>
@@ -64,8 +51,6 @@
 	<string name="sort_app_name">Имени приложения</string>
 	<string name="sort_package_name">Имени пакета</string>
 	<string name="sort_by">Сортировать по</string>
-
-	<!-- DNS -->
 	<string name="vpn_dns">DNS</string>
 	<string name="use_default_dns">Использовать DNS по умолчанию</string>
 	<string name="dns_list">Список DNS</string>
