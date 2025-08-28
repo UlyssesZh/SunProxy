@@ -1,3 +1,7 @@
+[English ](README.md) | [Русский ](README_RU.md)
+
+<br>
+
 <img src="https://github.com/UlyssesZh/SunProxy/blob/master/app/src/main/ic_launcher-playstore.png?raw=true" width="100" alt="icon">
 
 # SunProxy

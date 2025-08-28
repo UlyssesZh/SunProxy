@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">SunProxy</string>
+	<string name="ok">ОК</string>
+	<string name="cancel">Отмена</string>
+	<string name="invalid_input">Неверный ввод</string>
+	<string name="about">%{app_name} %{version_name}\nЛицензия: %{license}\n<a href="%{home_url}">%{home_url}</a></string>
+	<string name="open_repo">См. исходный код</string>
+	<string name="start">Пуск</string>
+	<string name="stop">Стоп</string>
+	<string name="msg_start_failed">Запуск не удался</string>
+	<string name="redirect_rule_hint">Правила перенаправления</string>
+	<string name="title_show_about">О программе</string>
+	<string name="title_activity_settings">Настройки</string>
+	<string name="redirect_rule_syntax_error">Строка %1$d: %2$s</string>
+	<string name="redirect_rule_unexpected_end">Неожиданный конец выражения</string>
+	<string name="redirect_rule_invalid_protocol">Неверный протокол: %s</string>
+	<string name="redirect_rule_invalid_operator">Неверный оператор: %s</string>
+	<string name="redirect_rule_invalid_hostname_wildcard">Неверный шаблон имени хоста: %s</string>
+	<string name="redirect_rule_invalid_ip_range">Неверный диапазон IP-адресов: %s</string>
+	<string name="redirect_rule_invalid_ip_address">Неверный IP-адрес: %s</string>
+	<string name="redirect_rule_invalid_field">Неверное поле: %s</string>
+	<string name="basic_settings">Основные</string>
+	<string name="enable_ipv6">Включить IPv6</string>
+	<string name="invalid_enable_ipv6">Нельзя отключить IPv6, так как все IP-адреса в VPN — это адреса IPv6.</string>
+	<string name="vpn_addresses">IP-адреса VPN</string>
+	<string name="vpn_addresses_message">По одному IP-адресу или диапазону в каждой строке. Используйте \"#\" для комментариев.\nАдреса IPv6 игнорируются, если IPv6 отключён.</string>
+	<string name="invalid_vpn_addresses">Убедитесь, что указан хотя бы один IP-адрес и все они корректны.</string>
+	<string name="applications_settings">Приложения</string>
+	<string name="app_list_type">Чёрный/белый список приложений</string>
+	<string-array name="app_list_type">
+		<item>Чёрный список: выбранные приложения не обрабатываются</item>
+		<item>Белый список: только выбранные приложения обрабатываются</item>
+	</string-array>
+	<string-array name="app_list_type_values">
+		<item>ЧЁРНЫЙ СПИСОК</item>
+		<item>БЕЛЫЙ СПИСОК</item>
+	</string-array>
+	<string name="whitelist">Белый список приложений</string>
+	<string name="blacklist">Чёрный список приложений</string>
+	<string name="clear_app_list">Очистить все выборы</string>
+	<string name="clear_app_list_message">Очистить все выбранные приложения в белом/чёрном списке</string>
+	<string name="search">Поиск</string>
+	<string name="show_system_apps">Показывать системные приложения</string>
+	<string name="filter_app_name">Имя приложения</string>
+	<string name="filter_package_name">Имя пакета</string>
+	<string name="filter_by">Фильтровать по</string>
+	<string name="descending">По убыванию</string>
+	<string name="ascending">По возрастанию</string>
+	<string name="order">Порядок</string>
+	<string name="sort_app_name">Имени приложения</string>
+	<string name="sort_package_name">Имени пакета</string>
+	<string name="sort_by">Сортировать по</string>
+	<string name="vpn_dns">DNS</string>
+	<string name="use_default_dns">Использовать DNS по умолчанию</string>
+	<string name="dns_list">Список DNS</string>
+	<string name="dns_list_message">По одному IP-адресу в каждой строке. Используйте \"#\" для комментариев.\nНельзя использовать локальные и обратные адреса.</string>
+	<string name="hosts">Хосты</string>
+	<string name="hosts_message">По одному IP-адресу и доменному имени в каждой строке.\nИспользуйте \"#\" для комментариев.\nПоддерживаются маски: \"*\" соответствует нулю или более символам, кроме точки «.»;\n\"**\" соответствует любому количеству любых символов.</string>
+	<string name="invalid_dns_list">Проверьте формат IP-адресов.\nУбедитесь, что нет локальных и обратных адресов.</string>
+	<string name="invalid_hosts_list">Проверьте формат IP-адресов и доменных имён.</string>
+	<string name="search_domains">Поиск доменов</string>
+	<string name="search_domains_message">По одному домену в каждой строке. Используйте \"#\" для комментариев.</string>
+	<string name="invalid_search_domains">Убедитесь, что все домены указаны корректно.</string>
+</resources>
