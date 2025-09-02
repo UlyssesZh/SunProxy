@@ -12,7 +12,7 @@
 	<string name="redirect_rule_hint">Правила перенаправления</string>
 	<string name="title_show_about">О программе</string>
 	<string name="title_activity_settings">Настройки</string>
-	<string name="redirect_rule_syntax_error">Строка %1$d: %2$s</string>
+	<string name="redirect_rule_syntax_error">Строка %d: %s</string>
 	<string name="redirect_rule_unexpected_end">Неожиданный конец выражения</string>
 	<string name="redirect_rule_invalid_protocol">Неверный протокол: %s</string>
 	<string name="redirect_rule_invalid_operator">Неверный оператор: %s</string>
