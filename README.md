@@ -1,13 +1,27 @@
-<img src="https://github.com/UlyssesZh/SunProxy/blob/master/app/src/main/ic_launcher-playstore.png?raw=true" width="100" alt="icon">
+<img src="https://github.com/UlyssesZh/SunProxy/blob/master/app/src/main/ic_launcher-playstore.png?raw=true" width="128" alt="icon">
 
 # SunProxy
 
 Use VPN for proxy (redirect TCP packets, including HTTP proxy), custom DNS, and custom hosts file.
 
+## Installation
+
+<a href="https://f-droid.org/packages/io.github.ulysseszh.sunproxy">
+	<img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="80">
+</a>
+<a href="https://apps.obtainium.imranr.dev/redirect.html?r=obtainium://add/https://github.com/UlyssesZh/SunProxy">
+	<img src="https://github.com/user-attachments/assets/713d71c5-3dec-4ec4-a3f2-8d28d025a9c6" alt="Get it on Obtainium" height="80">
+</a>
+<a href="https://github.com/UlyssesZh/SunProxy/releases/latest">
+	<img src="https://i.ibb.co/q0mdc4Z/get-it-on-github.png" alt="Get it on GitHub" height="80">
+</a>
+
 ## Redirect rule syntax
 
 I am too lazy to explain.
 See `app/src/test/java/io/github/ulysseszh/sunproxy/UtilsTest.kt` for examples.
+In the simplest case, just put the IP address and a port number separated by a colon,
+which means redirecting all packets to that IP address and port number.
 
 ## Usage notes
 
@@ -49,4 +63,5 @@ which is licensed under BSD-2-Clause.
 In this rewrite, I used the codes from the latest commit (bdf74ec) of NetGuard,
 and I restored NetGuard's original license notice in the source codes
 and marked every change I made to the codes.
+
 The app icon is based on a material icon licensed under Apache-2.0.
